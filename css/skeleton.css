@@ -1,0 +1,246 @@
+/* Grid */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* border:solid white 1px; */
+}
+
+body {
+    width: 100%;
+/*    min-width: 240px;*/
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+[class*="container"]{ display: block;}
+
+
+/* --  container  --*/
+
+.container {
+    max-width: 100%;
+    width: 1185px;
+    margin: 0 auto;
+}
+
+
+
+/* --  rows  --*/
+
+.row { 
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+/* --  columns  --*/
+
+
+
+.col-1 { width: 8.3333%;}
+.col-2 { width: 16.6666%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.3333%;}
+.col-5 { width: 41.6666%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.6666%;}
+.col-8 { width: 66.6666%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83%;}
+.col-11 { width: 91.6666%;}
+.col-12 { width: 100%;}
+
+
+[class*="col"] { margin: 0px 10px 0px 10px;}
+[class*="col"]:first-child { margin-left: 0px;}
+[class*="col"]:last-child {  margin-right: 0px;}
+
+
+/* --  typography  --*/
+
+h1 {font-size: 64px;}
+h2 {font-size: 32px;}
+h3 {font-size: 22px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 12px;}
+p {font-size: 15px; line-height: 1.6rem;}
+
+
+
+/* --  text-colors  --*/
+
+.text-primary {  color: #19B16F;}
+.text-seconday {  color: #B9B9B9;}
+.text-sub {color: #f9f9f9;}
+
+
+/* --  background-colors  --*/
+.main-bg {background-color: #414142;}
+
+
+/* --  link buttons  --*/
+
+.button {
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/* --  helper classes  --*/
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.flex-reverse-wrap {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.justify-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.wrap{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media (max-width: 1236px){
+    .container {
+        max-width: 100%;
+        width: 960px;
+        margin: 0 auto;
+    }
+    .container-wide {
+        max-width: 100%;
+        width: 1130px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1196px){
+    .container {
+        max-width: 100%;
+        width: 960px;
+        margin: 0 auto;
+    }
+    .container-wide {
+        max-width: 100%;
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1045px){
+    .container {
+        max-width: 100%;
+        width: 860px;
+        margin: 0 auto;
+    }
+    .container-wide {
+        max-width: 100%;
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:945px){
+    
+    .container {
+        max-width: 100%;
+        width: 720px;
+        margin: 0 auto;
+    }   
+    .container-wide {
+        max-width: 100%;
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width:745px){
+
+    .container, .container-wide {
+        max-width: 100%;
+        width: 550px;
+        margin: 0 auto;
+    }   
+
+}
+
+@media (max-width:570px){
+    .container, .container-wide {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }  
+
+}
+
+@media(max-width:420px){
+    .container, .container-wide {
+        max-width: 100%;
+        width: 300px;
+        margin: 0 auto;
+    }  
+  
+}
+
+@media (min-width:266px) and (max-width:319px){
+    .container, .container-wide {
+        max-width: 100%;
+        width: 246px;
+        margin: 0 auto;
+    }  
+}
